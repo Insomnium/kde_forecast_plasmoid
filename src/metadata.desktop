@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Yet another forecast
+Name[nl]=Yet another forecast
+Type=Service
+ServiceTypes=Plasma/Applet
+Icon=chronometer
+X-Plasma-API=python
+X-Plasma-MainScript=src/main.py
+X-KDE-PluginInfo-Author=Igor Petrov
+X-KDE-PluginInfo-Email=Ins137@gmail.com
+X-KDE-PluginInfo-Name=yet-another-plasmoid
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=None
+X-KDE-PluginInfo-Category=Forecast
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
