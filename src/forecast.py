@@ -43,14 +43,12 @@ class Forecast:
         return tag
 
     def temperature(self, day):
-        # print self.__tomorrow.find('n:sunrise', namespaces=self.__nsmap).text
-        # print self.__day_after_tomorrow.find('n:sunrise', namespaces=self.__nsmap).text
         if day == self.TODAY:
             return self.__today.find('n:temperature', namespaces=self.__nsmap).text
 
         tag = self.__get_future_date_tag(day)
-        # find = tag.find("n:hour[@at='7']/n:temperature", namespaces=self.__nsmap)
-        return tag.find("n:day_part[@type='day_short']/n:temperature", namespaces=self.__nsmap).text
+        # return tag.find("n:day_part[@type='day_short']/n:temperature", namespaces=self.__nsmap).text
+        return tag.find("n:day_part[@type='day']/n:temperature-data/n:avg", namespaces=self.__nsmap).text
 
 if __name__ == '__main__':
     forecast = Forecast()
