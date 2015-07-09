@@ -1,7 +1,9 @@
 import urllib2
 import xml.etree.ElementTree as et
 import datetime
+
 from DailyForecast import DailyForecast
+
 
 class Forecast:
     __nsmap = {'n': 'http://weather.yandex.ru/forecast'}
